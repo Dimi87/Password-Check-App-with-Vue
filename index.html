@@ -41,7 +41,11 @@
             
             </li>
           <br />
-          <li>Contains Numbers <span id="contains-numbers">❌</span></li>
+          <li>
+            Contains Numbers
+            <span v-if="passwordsContainNumbers">✅</span>
+            <span v-else>❌</span>
+            </li>
           <br />
           <li>
             At least 10 characters long
