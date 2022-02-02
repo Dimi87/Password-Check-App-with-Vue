@@ -3,31 +3,30 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 html {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    background-color:lightsalmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-    padding: 50px 16px;
-    text-align: center;
+  padding: 50px 16px;
+  text-align: center;
 }
 /* other styling */
 
-
 h1 {
-    font-family: 'Lobster';
-    font-style: italic;
-    font-size: 60px;
-    color: white;
-    text-shadow: 0.1em 0.1em #333
+  font-family: "Lobster";
+  font-style: italic;
+  font-size: 60px;
+  color: white;
+  text-shadow: 0.1em 0.1em #333;
 }
 
 input {
@@ -35,7 +34,6 @@ input {
   border-radius: 2px;
   width: 200px;
   height: 30px;
-  
 }
 
 button {
@@ -45,21 +43,18 @@ button {
   color: white;
   width: 200px;
   height: 30px;
-  
-  
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-
-
 @media screen and (min-width: 700px) {
-    main {
+  _main {
     display: flex;
     justify-content: center;
-    }
-    form {
-      margin-top: 60px;
+  }
+  _form {
+    margin-top: 60px;
+  }
 }

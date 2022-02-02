@@ -29,5 +29,8 @@ Vue.createApp({
     passwordsContainLowercase() {
       return /[a-z]/.test(this.password1);
     },
+    passwordsContainNumbers() {
+      return /[0-9]/.test(this.password1);
+    },
   },
 }).mount("#app");
