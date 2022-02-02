@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Check App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Password Check</h1>
+    </header>
+    <main>
+      <div id="app">
+        <form onsubmit="return false" id="passwords">
+          <input :type="inputType" class="password1" v-model="password1" />
+          <br /><br />
+          <input class="password2" :type="inputType" v-model="password2" />
+          <br /><br />
+          <button @click="changeType">{{ buttonText }}</button>
+          <br /><br /><br />
+        </form>
+        <ul class="check-list">
+          <li>
+            Passwords are equal
+            <span v-if="passwordsEqual">✅</span>
+            <span v-else=>❌</span>
+          </li>
+          <br />
+          <li>
+            Lower Case Letters 
+            <span v-if="passwordsContainLowercase">✅</span>
+            <span v-else>❌</span>
+          </li>
+          <br />
+          <li>
+              Upper Case Letters 
+              <span v-if="passwordsContainUppercase">✅</span>
+              <span v-else>❌</span>
+            
+            </li>
+          <br />
+          <li>Contains Numbers <span id="contains-numbers">❌</span></li>
+          <br />
+          <li>
+            At least 10 characters long
+            <span id="at-least-10-characters-long">❌</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

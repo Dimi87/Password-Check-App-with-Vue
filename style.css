@@ -1,0 +1,65 @@
+/* General Stylings */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    background-color:lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    padding: 50px 16px;
+    text-align: center;
+}
+/* other styling */
+
+
+h1 {
+    font-family: 'Lobster';
+    font-style: italic;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0.1em 0.1em #333
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 200px;
+  height: 30px;
+  
+}
+
+button {
+  border: 3px solid black;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 30px;
+  
+  
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    main {
+    display: flex;
+    justify-content: center;
+    }
+    form {
+      margin-top: 60px;
+}
