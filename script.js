@@ -32,5 +32,8 @@ Vue.createApp({
     passwordsContainNumbers() {
       return /[0-9]/.test(this.password1);
     },
+    longs() {
+      return this.password1.length >= 10;
+    },
   },
 }).mount("#app");
