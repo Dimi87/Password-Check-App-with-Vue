@@ -27,29 +27,29 @@
             <span v-if="passwordsEqual">✅</span>
             <span v-else=>❌</span>
           </li>
-          <br />
+          <br/>
           <li>
             Lower Case Letters 
             <span v-if="passwordsContainLowercase">✅</span>
             <span v-else>❌</span>
           </li>
-          <br />
+          <br/>
           <li>
               Upper Case Letters 
               <span v-if="passwordsContainUppercase">✅</span>
               <span v-else>❌</span>
             
             </li>
-          <br />
+          <br/>
           <li>
             Contains Numbers
             <span v-if="passwordsContainNumbers">✅</span>
             <span v-else>❌</span>
             </li>
-          <br />
+          <br/>
           <li>
             At least 10 characters long
-            <span v-if="long">✅</span>
+            <span v-if="longs">✅</span>
             <span v-else>❌</span>
           </li>
         </ul>
