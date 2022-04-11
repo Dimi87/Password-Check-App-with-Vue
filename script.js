@@ -21,7 +21,7 @@ Vue.createApp({
   },
   computed: {
     passwordsEqual() {
-      return this.password1 === this.password2;
+      return this.password1 === this.password2 && this.password1.length > 0;
     },
     passwordsContainUppercase() {
       return /[A-Z]/.test(this.password1);
