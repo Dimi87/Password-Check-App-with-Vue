@@ -22,11 +22,10 @@ body {
 /* other styling */
 
 h1 {
-  font-family: "Lobster";
-  font-style: italic;
-  font-size: 60px;
+  font-family: "Lobster", cursive;
+  text-shadow: 4px 4px 0px black;
+  font-size: 4rem;
   color: white;
-  text-shadow: 0.1em 0.1em #333;
 }
 
 input {
